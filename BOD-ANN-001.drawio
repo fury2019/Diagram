@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
-  <uml:Package name="공지사항 관리 시스템">
-    <uml:Actor name="마스터 계정"/>
-    <uml:Actor name="사용자"/>
-    <uml:UseCase name="공지사항 관리">
-      <uml:UseCase name="공지사항 등록">
-        <uml:Include addition="공지사항 입력 검증"/>
-      </uml:UseCase>
-      <uml:UseCase name="공지사항 수정">
-        <uml:Include addition="공지사항 입력 검증"/>
-      </uml:UseCase>
-      <uml:UseCase name="공지사항 삭제"/>
-      <uml:UseCase name="공지사항 입력 검증">
-        <uml:Extend extension="제목 검증"/>
-        <uml:Extend extension="내용 검증"/>
-        <uml:Extend extension="카테고리 검증"/>
-      </uml:UseCase>
-      <uml:UseCase name="제목 검증"/>
-      <uml:UseCase name="내용 검증"/>
-      <uml:UseCase name="카테고리 검증"/>
-    </uml:UseCase>
-    <uml:Association source="마스터 계정" target="공지사항 관리"/>
-    <uml:Association source="사용자" target="공지사항 관리"/>
-  </uml:Package>
-</uml:Model>
+<uml:UseCaseDiagram xmlns:uml="http://www.omg.org/spec/UML/20090901">
+    <actors>
+        <actor id="A1" name="마스터 계정" />
+        <actor id="A2" name="일반 계정" />
+    </actors>
+    <usecases>
+        <usecase id="UC1" name="공지사항 등록" />
+        <usecase id="UC2" name="공지사항 수정" />
+        <usecase id="UC3" name="공지사항 삭제" />
+        <usecase id="UC4" name="권한 부여" />
+        <usecase id="UC5" name="카테고리 설정" />
+    </usecases>
+    <relationships>
+        <association from="A1" to="UC4" />
+        <association from="A1" to="UC1" />
+        <association from="A1" to="UC2" />
+        <association from="A1" to="UC3" />
+        <association from="A1" to="UC5" />
+        <association from="A2" to="UC1" condition="권한 부여됨" />
+        <association from="A2" to="UC2" condition="권한 부여됨" />
+        <association from="A2" to="UC3" condition="권한 부여됨" />
+        <include from="UC1" to="UC5" />
+        <include from="UC2" to="UC5" />
+        <extend from="UC1" to="UC4" condition="권한이 없는 경우" />
+    </relationships>
+</uml:UseCaseDiagram>
