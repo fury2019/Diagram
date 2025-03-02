@@ -1,53 +1,56 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
-  <diagram name="페이지-1" id="H0ObpQpSqTRcG5AtEj7Y">
-    <mxGraphModel dx="1395" dy="643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
+  <diagram name="페이지-1" id="DKJEJJquOrz6qWJuDARE">
+    <mxGraphModel dx="671" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="4evK0Zdy4DtZC8nvN_yz-2" value="공지사항 등록" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="2" value="마스터 계정" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="100" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="공지사항 등록" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="50" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4evK0Zdy4DtZC8nvN_yz-3" value="공지사항 수정" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="4" value="공지사항 수정" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="150" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4evK0Zdy4DtZC8nvN_yz-4" value="공지사항 삭제" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="5" value="공지사항 삭제" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="250" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4evK0Zdy4DtZC8nvN_yz-5" value="공지사항 입력 검증" style="rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="400" y="100" width="120" height="60" as="geometry" />
+        <mxCell id="6" value="제목 검증" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="50" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4evK0Zdy4DtZC8nvN_yz-6" value="제목 검증" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="600" y="50" width="120" height="60" as="geometry" />
+        <mxCell id="7" value="내용 검증" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="150" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4evK0Zdy4DtZC8nvN_yz-7" value="내용 검증" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="600" y="150" width="120" height="60" as="geometry" />
+        <mxCell id="8" value="카테고리 검증" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="250" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4evK0Zdy4DtZC8nvN_yz-8" value="카테고리 검증" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="600" y="250" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="4evK0Zdy4DtZC8nvN_yz-9" edge="1" parent="1" target="4evK0Zdy4DtZC8nvN_yz-2">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="110" y="130" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="4evK0Zdy4DtZC8nvN_yz-10" edge="1" parent="1" target="4evK0Zdy4DtZC8nvN_yz-3">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="110" y="146.66666666666652" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="4evK0Zdy4DtZC8nvN_yz-11" edge="1" parent="1" target="4evK0Zdy4DtZC8nvN_yz-4">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="110" y="163.33333333333326" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="4evK0Zdy4DtZC8nvN_yz-12" edge="1" parent="1" source="4evK0Zdy4DtZC8nvN_yz-2" target="4evK0Zdy4DtZC8nvN_yz-5">
+        <mxCell id="9" edge="1" parent="1" source="2" target="3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4evK0Zdy4DtZC8nvN_yz-13" edge="1" parent="1" source="4evK0Zdy4DtZC8nvN_yz-3" target="4evK0Zdy4DtZC8nvN_yz-5">
+        <mxCell id="10" edge="1" parent="1" source="2" target="4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4evK0Zdy4DtZC8nvN_yz-15" value="관리자" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="60" y="110" width="30" height="60" as="geometry" />
+        <mxCell id="11" edge="1" parent="1" source="2" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" edge="1" parent="1" source="3" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13" edge="1" parent="1" source="3" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14" edge="1" parent="1" source="3" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" edge="1" parent="1" source="4" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16" edge="1" parent="1" source="4" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" edge="1" parent="1" source="4" target="8">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
