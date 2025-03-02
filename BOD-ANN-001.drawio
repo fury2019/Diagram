@@ -1,27 +1,94 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<uml:UseCaseDiagram xmlns:uml="http://www.omg.org/spec/UML/20090901">
-    <actors>
-        <actor id="A1" name="마스터 계정" />
-        <actor id="A2" name="일반 계정" />
-    </actors>
-    <usecases>
-        <usecase id="UC1" name="공지사항 등록" />
-        <usecase id="UC2" name="공지사항 수정" />
-        <usecase id="UC3" name="공지사항 삭제" />
-        <usecase id="UC4" name="권한 부여" />
-        <usecase id="UC5" name="카테고리 설정" />
-    </usecases>
-    <relationships>
-        <association from="A1" to="UC4" />
-        <association from="A1" to="UC1" />
-        <association from="A1" to="UC2" />
-        <association from="A1" to="UC3" />
-        <association from="A1" to="UC5" />
-        <association from="A2" to="UC1" condition="권한 부여됨" />
-        <association from="A2" to="UC2" condition="권한 부여됨" />
-        <association from="A2" to="UC3" condition="권한 부여됨" />
-        <include from="UC1" to="UC5" />
-        <include from="UC2" to="UC5" />
-        <extend from="UC1" to="UC4" condition="권한이 없는 경우" />
-    </relationships>
-</uml:UseCaseDiagram>
+# XML 파일 다시 생성 (코드 실행 상태가 초기화됨)
+xml_content = """<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="공지사항 관리 유스케이스 다이어그램">
+    <mxGraphModel dx="1180" dy="582" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Actor: Master Admin -->
+        <mxCell id="2" value="Master Admin" style="shape=actor;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="100" width="80" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Actor: Authorized User -->
+        <mxCell id="3" value="Authorized User" style="shape=actor;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="250" width="80" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Use Cases -->
+        <mxCell id="4" value="공지사항 등록" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="100" width="150" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="5" value="공지사항 수정" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="180" width="150" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="6" value="공지사항 삭제" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="260" width="150" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Constraints -->
+        <mxCell id="7" value="제목 (1~30자)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="100" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="8" value="내용 (1~200자)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="9" value="카테고리 선택" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="220" width="120" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Relationships -->
+        <mxCell id="10" parent="1" source="2" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="11" parent="1" source="2" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="12" parent="1" source="2" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="13" parent="1" source="3" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="14" parent="1" source="3" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="15" parent="1" source="3" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Constraints include relationships -->
+        <mxCell id="16" parent="1" source="4" target="7" edge="1" style="dashed=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="17" parent="1" source="4" target="8" edge="1" style="dashed=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="18" parent="1" source="4" target="9" edge="1" style="dashed=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+"""
+
+# XML 파일 저장
+file_path = "/mnt/data/usecase_diagram.xml"
+with open(file_path, "w", encoding="utf-8") as f:
+    f.write(xml_content)
+
+file_path
