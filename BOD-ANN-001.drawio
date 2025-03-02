@@ -1,10 +1,26 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
-  <diagram name="페이지-1" id="SeADWoRf53sVuQxxZreA">
-    <mxGraphModel>
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+  <uml:Package name="공지사항 관리 시스템">
+    <uml:Actor name="마스터 계정"/>
+    <uml:Actor name="사용자"/>
+    <uml:UseCase name="공지사항 관리">
+      <uml:UseCase name="공지사항 등록">
+        <uml:Include addition="공지사항 입력 검증"/>
+      </uml:UseCase>
+      <uml:UseCase name="공지사항 수정">
+        <uml:Include addition="공지사항 입력 검증"/>
+      </uml:UseCase>
+      <uml:UseCase name="공지사항 삭제"/>
+      <uml:UseCase name="공지사항 입력 검증">
+        <uml:Extend extension="제목 검증"/>
+        <uml:Extend extension="내용 검증"/>
+        <uml:Extend extension="카테고리 검증"/>
+      </uml:UseCase>
+      <uml:UseCase name="제목 검증"/>
+      <uml:UseCase name="내용 검증"/>
+      <uml:UseCase name="카테고리 검증"/>
+    </uml:UseCase>
+    <uml:Association source="마스터 계정" target="공지사항 관리"/>
+    <uml:Association source="사용자" target="공지사항 관리"/>
+  </uml:Package>
+</uml:Model>
