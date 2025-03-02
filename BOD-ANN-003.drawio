@@ -61,31 +61,31 @@
         <mxCell id="19" edge="1" parent="1" source="3" target="6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="20" edge="1" parent="1" source="4" target="7" value="<<include>>" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="20" edge="1" parent="1" source="4" target="7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="21" edge="1" parent="1" source="5" target="7" value="<<include>>" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="21" edge="1" parent="1" source="5" target="7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="22" edge="1" parent="1" source="7" target="8" value="<<extends>>" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="22" edge="1" parent="1" source="7" target="8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="23" edge="1" parent="1" source="7" target="9" value="<<extends>>" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="23" edge="1" parent="1" source="7" target="9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="24" edge="1" parent="1" source="7" target="10" value="<<extends>>" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="24" edge="1" parent="1" source="7" target="10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="25" edge="1" parent="1" source="6" target="13" value="<<include>>" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="25" edge="1" parent="1" source="6" target="13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="26" edge="1" parent="1" source="12" target="13" value="<<include>>" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="26" edge="1" parent="1" source="12" target="13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="27" edge="1" parent="1" source="14" target="5" value="<<include>>" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="27" edge="1" parent="1" source="14" target="5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="28" edge="1" parent="1" source="14" target="15" value="<<include>>" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="28" edge="1" parent="1" source="14" target="15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
